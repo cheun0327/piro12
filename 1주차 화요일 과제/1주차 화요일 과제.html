@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter</title>
+    <style>
+        body{margin: 0;font-family: "Segoe UI","Arial","sans-serif";}
+        #wrap{overflow: hidden; background-color: #32acff;}
+        #content_left, #content_right{float: left; width: 50%; height: 720px;}
+        #content_left{
+            background-image: url("http://winthropgroup.com/do-not-enter-or-modify-or-erase/site-theme/img/twitter-blue.png");
+            opacity: 0.3;
+            background-size: 170%; background-repeat: no-repeat;
+        }
+        #content_left .left_text{
+            color: white; font-size: 1.3em;
+            position: relative;
+            left: 20%; top: 37%;
+            font-weight: bold;
+        }
+        .left_text .text{margin: 0 0 6px 5px;}
+        #content_right{
+            position: relative;
+            background-color: white;
+        }
+        #content_right .log_in {
+            position: absolute;
+            top: 5%; left: 18%; right: 18%;
+        }
+        input[type=text], input[type=password]{
+            width: 200px; height: 40px;
+            border-radius: 2px;
+            border: solid 1px lightgray;
+        }
+        input[type=button]{
+            height: 50px; width: 70px;
+            border: solid 2px #32acff;
+            border-radius: 50px; font-weight: bold;
+            color: #32acff; background-color: white;
+        }
+        #content_right .find_id{
+            position: relative;
+            left: 41%;
+        }
+        #content_right .join, #content_right .mid_text{
+            position: relative;
+            left: 27%; top: 25%; right: 27%;
+            font-weight: bold;
+        }
+        #content_right .join_bt{
+            background-color: #32acff; color: white;
+            border-radius: 20px;
+            text-align: center; line-height: 35px;
+            width: 350px; height: 34px;
+        }
+        #content_right .log_in_bt{
+            position: relative; top: 10px;
+            color: #32acff; border: 1px solid #32acff; background-color: white;
+            border-radius: 20px;
+            text-align: center; line-height: 35px;
+            width: 350px; height: 34px;
+        }
+        #content_right .join_bt:hover{background-color: #19508e;}
+        #content_right .log_in_bt:hover{background-color: #dcf0f5;}
+        #footer{
+            position: relative; border: solid 1px ghostwhite;
+        }
+        ul{
+            overflow: hidden;list-style: none;
+            font-size: 0.8em;color: darkgrey;text-align: center;
+            position: relative;
+            top: 50%; left: 10%; right: 10%;
+        }
+        li{margin: 0 9px;float: left;}
+        a{text-decoration: none; color: darkgrey;font-size: 0.8em;}
+        a:hover{text-decoration: underline;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="content_left">
+        <div class="left_text">
+            <span class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbSt61hno6j_Ynp6i7j0C9symLpiqJoIcd6HoVosvpUnNKZ0Pf" width="40" height="40"></span>
+            <span class="text">관심사를 팔로우하세요.</span><br/><br><br>
+            <span class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbSt61hno6j_Ynp6i7j0C9symLpiqJoIcd6HoVosvpUnNKZ0Pf" width="40" height="40"></span>
+            <span class="text">사람들이 이야기하고 있는 주제에 대해 알아보세요.</span><br><br><br>
+            <span class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbSt61hno6j_Ynp6i7j0C9symLpiqJoIcd6HoVosvpUnNKZ0Pf" width="40" height="40"></span>
+            <span class="text">대화에 참여하세요</span><br>
+        </div>
+    </div>
+    <!--####################################################-->
+    <div id="content_right">
+        <div class="log_in">
+            <div class="log_in_form">
+                <form action=""method="get">
+                    <input type="text" name="uid" placeholder="휴대폰 번호, 이메일 주소 또는"/>
+                    <input type="password" name="upw" placeholder="비밀번호"/>
+                    <input type="button" value="로그인"/>
+                </form>
+            </div>
+            <div class="find_id"><a href="" rel="">비밀번호 찾기</a> </div>
+        </div>
+        <!--####################################################-->
+        <div class="mid_text">
+            <div class="icon">
+                <img src="http://www.paginas-del-diario-de-satan.com/pdds/wp-content/uploads/2018/08/928c311cb763123e2f100f0425dac5bf.jpg" width="60" height="60" alt="돋보기 이미지">
+            </div>
+            <pre class="check_text"><h1>지금 세계 곳곳에서 무슨 일
+이 일어나고 있는지 확인하세
+요.
+            </h1></pre>
+        </div>
+        <!--####################################################-->
+        <div class="join">
+            <p class="join_text"><h3>지금 트위터에 가입하세요</h3></p>
+            <div class="join_bt">가입하기</div>
+            <div class="log_in_bt">로그인</div>
+        </div>
+    </div>
+</div>
+<!--####################################################-->
+<div id="footer">
+    <ul>
+        <li><a href="/about">회사소개</a></li>
+        <li><a href="//support.twitter.com" rel="noopener">고객센터</a></li>
+        <li><a href="https://blog.twitter.com/korea" rel="noopener">블로그</a></li>
+        <li><a href="http://status.twitter.com" rel="noopener">시스템 현황</a></li>
+        <li><a href="https://about.twitter.com/careers" rel="noopener">인재채용</a></li>
+        <li><a href="/tos" rel="noopener">이용약관</a></li>
+        <li><a href="/privacy" rel="noopener">개인정보 처리방침</a></li>
+        <li><a href="//support.twitter.com/articles/20170514" rel="noopener">쿠키</a></li>
+        <li><a href="//business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html" rel="noopener">광고 정보</a></li>
+        <li><a href="//about.twitter.com/press/brand-assets" rel="noopener">브랜드</a></li>
+        <li><a href="https://about.twitter.com/products" rel="noopener">애플리케이션</a></li>
+        <li><a href="//ads.twitter.com/?ref=gl-tw-tw-twitter-advertise" rel="noopener">광고</a></li>
+        <li><a href="https://marketing.twitter.com" rel="noopener">마케팅</a></li>
+        <li><a href="https://business.twitter.com" rel="noopener">비즈니스</a></li>
+        <li><a href="//dev.twitter.com" rel="noopener">개발자</a></li>
+        <li><a href="/i/directory/profiles" rel="noopener">디렉토리</a></li>
+        <li><a href="/settings/personalization" rel="noopener">설정</a></li>
+        <li>&copy; 2020 Twitter</li>
+    </ul>
+</div>
+</body>
+</html>
