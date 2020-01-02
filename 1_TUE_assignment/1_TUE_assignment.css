@@ -1,0 +1,75 @@
+body{margin: 0;font-family: "Segoe UI","Arial","sans-serif";}
+i{margin: 0 20px 0 0;}
+#wrap{overflow: hidden; background-color: #32acff;height: 85%; width: 100%}
+#content_left, #content_right{float: left; width: 50%; height: 720px;}
+#content_left{
+    background-image: url("twitt.PNG");
+    background-size: 170%; background-repeat: no-repeat;
+}
+#content_left .left_text{
+    color: white; font-size: 1.3em;
+    position: relative;
+    left: 20%; top: 37%;
+    font-weight: bold;
+}
+#content_left .text{
+    height: 80px;
+    line-height: 80px;
+}
+#content_right{
+    position: relative;
+    background-color: white;
+}
+#content_right .log_in {
+    position: absolute;
+    top: 5%; left: 18%; right: 18%;
+}
+input[type=text], input[type=password]{
+    width: 200px; height: 40px;
+    border-radius: 2px;
+    border: solid 1px lightgray;
+}
+input[type=button]{
+    height: 50px; width: 70px;
+    border: solid 2px #32acff;
+    border-radius: 50px; font-weight: bold;
+    color: #32acff; background-color: white;
+}
+#content_right .find_id{
+    position: relative;
+    left: 41%;
+}
+#content_right .join, #content_right .mid_text{
+    position: relative;
+    left: 27%; top: 25%; right: 27%;
+    font-weight: bold;
+}
+#content_right .join_bt{
+    background-color: #32acff; color: white;
+    border-radius: 20px;
+    text-align: center; line-height: 35px;
+    width: 350px; height: 34px;
+}
+#content_right .log_in_bt{
+    position: relative; top: 10px;
+    color: #32acff; border: 1px solid #32acff; background-color: white;
+    border-radius: 20px;
+    text-align: center; line-height: 35px;
+    width: 350px; height: 34px;
+}
+#content_right .join_bt:hover{background-color: #19508e;}
+#content_right .log_in_bt:hover{background-color: #dcf0f5;}
+#footer{
+    border: solid 1px ghostwhite;
+}
+.hyperlinks{
+    display: flex;
+    justify-content: center;
+}
+.hy{
+    list-style: none; font-size: 0.8em; color: darkgrey;text-align: center;
+    float: left;
+    margin: 0 20px 0 0;
+}
+a{text-decoration: none; color: darkgrey;font-size: 0.8em;}
+a:hover{text-decoration: underline;}
