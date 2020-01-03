@@ -55,8 +55,8 @@ text-transform: uppercase;
     float:left;
     padding:10px;
     color:rgb(65, 62, 102);
-    
 }
+.header_nav_menu li:hover{color: #1bb1dc}
 .get_started{
     width: 100vw; height: 100vh;
     position: relative;
