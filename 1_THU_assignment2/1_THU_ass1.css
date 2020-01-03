@@ -156,7 +156,7 @@ p{padding: 0;margin: 0 0 30px 0;}
     margin-block-start: 1.33em;margin-block-end: 1.33em;
     margin-inline-start: 0px;margin-inline-end: 0px;
 }
-/*=========================potpolio================================*/
+/*=========================portfolio================================*/
     .portfolio{
         width:80vw;
         height:1400px;
@@ -278,9 +278,13 @@ p{padding: 0;margin: 0 0 30px 0;}
     .portfolio_container8:hover .mid{opacity: 1}
     .portfolio_container9:hover .portfolio_img{filter: brightness(50%)}
     .portfolio_container9:hover .mid{opacity: 1}
-    .portfolio_contents a, .portfolio_contents h4{
-        color: white;
+    .portfolio_contents a, .portfolio_contents h4, .portfolio_contents p{
+        color: white; font-weight: bold;
+        margin: 0;
+    }
+    .portfolio_contents h4{
+        font-size: 25px;
     }
     .portfolio_contents a:hover{
-        color: #1bb1dc;
+        color: #1bb1dc; transition-duration: .5s;
     }
