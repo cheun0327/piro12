@@ -57,12 +57,6 @@ text-transform: uppercase;
     color:rgb(65, 62, 102);
     
 }
-
-
-
-
-
-
 .get_started{
     width: 100vw; height: 100vh;
     position: relative;
@@ -206,12 +200,6 @@ text-transform: uppercase;
     height: 50px;
 }
 
-
-
-
-
-
-
 /*==================================call to action=====================================*/
 .call_to_action{
     background: #2d2b46;
@@ -277,9 +265,6 @@ text-transform: uppercase;
     margin-block-start: 1.33em;margin-block-end: 1.33em;
     margin-inline-start: 0px;margin-inline-end: 0px;
 }
-
-
-
 .why_choose_us{
     width:100vw;
     height:1000px;
@@ -366,12 +351,6 @@ text-transform: uppercase;
   color: #8a87b6;
   margin-top:5px
 }
-
-
-
-
-
-
 /*=========================portfolio================================*/
     .portfolio{
         width:80vw;
