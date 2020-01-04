@@ -12,6 +12,419 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
 
     <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <style>
+        /* Clients Section */
+        #clients {
+            padding: 60px 0;
+        }
+
+            #clients.slide:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            #clients .section-header {
+                margin-top: 0;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            #clients .clients-carousel {
+                max-width: 80%;
+                width: 400%;
+                margin: 0 auto;
+                text-align: center;
+                animation: scroller 3s infinite;
+            }
+
+            #clients img {
+                width: 10vw;
+                height: auto;
+                opacity: 0.5;
+                transition: 0.3s;
+                padding: 15px 15px;
+            }
+
+        img[data-roll="2"] {
+        }
+
+        #clients img:hover {
+            opacity: 1;
+        }
+
+        @keyframes scroller {
+            0% {
+                margin-left: 10vw;
+            }
+
+            10% {
+                margin-left: 10vw;
+            }
+
+            25% {
+                margin-left: 0vw;
+            }
+
+            35% {
+                margin-left: 0vw;
+            }
+
+            50% {
+                margin-left: -10vw;
+            }
+
+            60% {
+                margin-left: -10vw;
+            }
+
+            75% {
+                margin-left: -20vw;
+            }
+
+            85% {
+                margin-left: -20vw;
+            }
+
+            100% {
+                margin-left: 10vw;
+            }
+        }
+
+        #clients .clients-button {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+            #clients .clients-button .btn-size {
+                background-color: #1bb1dc;
+                border: none;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: 0 3px;
+            }
+
+        #clients .btn-size:active, #clients .btn-size:focus {
+            background-color: #dddddd;
+        }
+        /* Team Section
+        --------------------------------*/
+        #team {
+            background-color: #f5f8fd;
+            padding: 20px 0;
+            padding-bottom: 70px;
+            overflow: hidden;
+        }
+
+            #team .row {
+                display: flex;
+            }
+
+            #team .member {
+                display: flex;
+                text-align: center;
+                margin-bottom: 20px;
+                position: relative;
+                left: 10vw;
+            }
+
+            #team .section-header {
+                text-align: center;
+                font-size: 2.5em;
+            }
+
+                #team .section-header p {
+                    font-size: 17px;
+                    margin-bottom: 70px;
+                }
+
+            #team .col-lg-3 {
+                float: left;
+            }
+
+            #team .member img {
+                width: 300px;
+                height: auto;
+                margin: 0 15px;
+            }
+
+            #team .member .member-info {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: 0.2s;
+                padding: 15px 0;
+                margin: 0 15px;
+                background: rgba(29, 28, 41, 0.6);
+                width: 300px;
+            }
+
+            #team .member .member-info-content {
+                transition: margin 0.2s;
+                height: 40px;
+                transition: height 0.4s;
+            }
+
+            #team .member:hover .member-info {
+                transition: 0.4s;
+            }
+
+            #team .member:hover .member-info-content {
+                height: 90px;
+            }
+
+            #team .member h4 {
+                font-weight: 700;
+                margin-bottom: 2px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            #team .member span {
+                font-style: italic;
+                /*display: block;*/
+                font-size: 13px;
+                color: #fff;
+            }
+
+            #team .member .social {
+                margin-top: 15px;
+            }
+
+                #team .member .social a {
+                    transition: none;
+                    color: #fff;
+                }
+
+                    #team .member .social a:hover {
+                        color: #1bb1dc;
+                    }
+
+                #team .member .social i {
+                    font-size: 18px;
+                    margin: 0 2px;
+                }
+        /*Pricing Section*/
+        #pricing {
+            background-color: #F5F8FD;
+            overflow: hidden;
+            padding: 80px 0;
+        }
+
+            #pricing .btn {
+                text-decoration: none;
+            }
+
+            #pricing .section-header {
+                text-align: center;
+            }
+
+                #pricing .section-header h3 {
+                    font-size: 2.5em;
+                }
+
+                #pricing .section-header p {
+                    font-size: 1.1em;
+                    margin-bottom: 50px;
+                }
+
+            #pricing li {
+                list-style: none;
+            }
+
+            #pricing .card {
+                background-color: white;
+                width: 400px;
+                heigt: auto;
+                float: left;
+                border: 0;
+                border-radius: 0px;
+                box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
+                transition: all .3s ease-in-out;
+                padding: 0;
+                padding-bottom: 40px;
+                position: relative;
+                left: 35%;
+                margin-right: 30px;
+            }
+
+            #pricing .flex-items-xs-center {
+                display: flex;
+            }
+
+            #pricing .col-lg-4 {
+                text-align: center;
+            }
+
+            #pricing .card:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 5px;
+                background-color: #1bb1dc;
+                transition: 0.5s;
+            }
+
+            #pricing .card:hover {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+                box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+            }
+
+                #pricing .card:hover:after {
+                    width: 100%;
+                }
+
+            #pricing .card .card-header {
+                background-color: white;
+                border-bottom: 0px;
+                -moz-text-align-last: center;
+                text-align-last: center;
+            }
+
+            #pricing .card .card-title {
+                font-size: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: initial;
+                color: #535074;
+            }
+
+            #pricing .card .card-block {
+                border-right: 10px;
+                padding-top: 0;
+                text-align: center;
+            }
+
+            #pricing .card .list-group-item {
+                border: 0px;
+                padding: 6px;
+                color: #413e66;
+                font-weight: 300;
+            }
+
+            #pricing .card h3 {
+                font-size: 64px;
+                margin-bottom: 0px;
+                color: #535074;
+                font-weight: initial;
+            }
+
+                #pricing .card h3 .currency {
+                    font-size: 30px;
+                    position: relative;
+                    font-weight: 100;
+                    top: -30px;
+                    letter-spacing: 0px;
+                }
+
+                #pricing .card h3 .period {
+                    font-size: 16px;
+                    color: #6c67a3;
+                    letter-spacing: 0px;
+                }
+
+            #pricing .card .list-group {
+                margin-bottom: 15px;
+                left: -100%;
+                margin-right: 50px;
+                font-size: 1.2em;
+            }
+
+            #pricing .card .btn {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+                color: #5f5b96;
+                border-radius: 0;
+                padding: 10px 24px;
+                letter-spacing: 1px;
+                border-radius: 3px;
+                display: inline-block;
+                background: #1bb1dc;
+                color: #fff;
+            }
+
+                #pricing .card .btn:hover {
+                    background: #0a98c0;
+                }
+        /*Footer*/
+
+        .wrap {
+            width: 80vw; height: 800px;
+            border: 0px;
+        }
+
+        div.left {
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            background: #cbe4ff;
+        }
+
+        div.center {
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            background: #cbe4ff;
+        }
+
+        div.right {
+            width: 50%;
+            float: right;
+            box-sizing: border-box;
+            background: #cbe4ff;
+        }
+
+        .footer-info, .footer-newsletter {
+            width: 250px;
+            height: 330px
+        }
+
+        .footer-info {
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            border: 0px;
+        }
+
+        .footer-links {
+            width: 250px;
+            height: 190px
+        }
+
+        .social-links {
+            width: 250px;
+            height: 190px
+        }
+
+        .form {
+            width: 400px;
+            height: 330px
+        }
+
+        h3 h4 {
+            font-family: "Montserrat", sans-serif
+        }
+    </style>
+
 
 </head>
 <body>
@@ -362,6 +775,291 @@
 
         </div>
     </div>
+   <!--==========================
+      Team Section
+    ============================-->
+    <section id="team" class="section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3>Team</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br> doloremque</p>
+            </div>
 
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp">
+                    <div class="member">
+                        <img src="img/team-1.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Walter White</h4>
+                                <span>Chief Executive Officer</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="member">
+                        <img src="img/team-2.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Sarah Jhonson</h4>
+                                <span>Product Manager</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="member">
+                        <img src="img/team-3.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>William Anderson</h4>
+                                <span>CTO</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="member">
+                        <img src="img/team-4.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Amanda Jepson</h4>
+                                <span>Accountant</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #team -->
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+        <div class="container">
+
+            <header class="section-header">
+                <h3>Our Clients</h3>
+            </header>
+            <div class="slide">
+                <div class="owl-carousel clients-carousel">
+                    <img data-roll="1" src="img/clients/client-1.png" alt="">
+                    <img data-roll="2" src="img/clients/client-2.png" alt="">
+                    <img data-roll="3" src="img/clients/client-3.png" alt="">
+                    <img data-roll="4" src="img/clients/client-4.png" alt="">
+                    <img data-roll="5" src="img/clients/client-5.png" alt="">
+                    <img data-roll="6" src="img/clients/client-6.png" alt="">
+                    <img data-roll="7" src="img/clients/client-7.png" alt="">
+                    <img data-roll="8" src="img/clients/client-8.png" alt="">
+                </div>
+            </div>
+            <div class="clients-button">
+                <button class="btn-size"><a href="#none"></a></button>
+                <button class="btn-size"><a href="#none"></a></button>
+            </div>
+
+        </div>
+    </section><!-- #clients -->
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+        <div class="container">
+
+            <header class="section-header">
+                <h3>Pricing</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br> doloremque</p>
+            </header>
+
+            <div class="row flex-items-xs-middle flex-items-xs-center">
+
+                <!-- Basic Plan  -->
+                <div class="col-xs-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><span class="currency">$</span>19<span class="period">/month</span></h3>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                Basic Plan
+                            </h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">Odio animi voluptates</li>
+                                <li class="list-group-item">Inventore quisquam et</li>
+                                <li class="list-group-item">Et perspiciatis suscipit</li>
+                                <li class="list-group-item">24/7 Support System</li>
+                            </ul>
+                            <a href="#" class="btn">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Plan  -->
+                <div class="col-xs-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><span class="currency">$</span>29<span class="period">/month</span></h3>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                Regular Plan
+                            </h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">Odio animi voluptates</li>
+                                <li class="list-group-item">Inventore quisquam et</li>
+                                <li class="list-group-item">Et perspiciatis suscipit</li>
+                                <li class="list-group-item">24/7 Support System</li>
+                            </ul>
+                            <a href="#" class="btn">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Plan  -->
+                <div class="col-xs-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><span class="currency">$</span>39<span class="period">/month</span></h3>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                Premium Plan
+                            </h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">Odio animi voluptates</li>
+                                <li class="list-group-item">Inventore quisquam et</li>
+                                <li class="list-group-item">Et perspiciatis suscipit</li>
+                                <li class="list-group-item">24/7 Support System</li>
+                            </ul>
+                            <a href="#" class="btn">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section><!-- #pricing -->
+    <!--==========================
+      Footer section
+    ============================-->
+
+    <div class="wrap">
+        <div class="left">
+            <div class="col-sm-6">
+
+                <div class="footer-info">
+                    <h3>Rapid</h3>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="col-sm-6">
+                <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="col-lg-6">
+
+                    <div class="form">
+
+                        <h4>Send us a message</h4>
+                        <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+
+                            <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
