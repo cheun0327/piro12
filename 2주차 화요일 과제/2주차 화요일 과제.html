@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      img:hover{
+
+      }
+    </style>
+</head>
+<body>
+<!--********************NavBar*********************-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Me and Leo..</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#carouselExampleCaptions">Pictures</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-11 row">
+    <div class="col-sm-9 row">
+      <div class="col-12">
+<!--********************Carousel*********************-->
+        <div id="carouselExampleCaptions" class="carousel slide mt-3 shadow bg-white rounded" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner rounded-lg">
+            <div class="carousel-item active">
+              <img src="img/KakaoTalk_20200108_155747949.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sleeping Leo</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/KakaoTalk_20200108_155739267.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Me and Leo</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/사진2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Leo's First Walk</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/사진3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Reliable Leo</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+<!--********************Grid boxes*********************-->
+      <div class="col-12">
+        <div class="row row-cols-1 row-cols-md-3 mt-3">
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_155752578.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">First Meeting</h5>
+                <p class="card-text">Hello My Lovely Puppy!<br>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!<br>2018.08.22</p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_155749764.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tired Leo</h5>
+                <p class="card-text">I'm tired..I'm tired..I'm tired..I'm tired..I'm tired..I'm tired..I'm tired..I'm tired..I'm tired..</p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_155722173.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CherryBlossom</h5>
+                <p class="card-text">!!!Leo's first spring!!!<br>with cherryblossom..</p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_155746297.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bubble Bath</h5>
+                <p class="card-text">Bubble Bubble Bubble Bubble Bubble Bubble Bubble Bubble </p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_174435884.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">In Summer</h5>
+                <p class="card-text">HOT!HOT!HOT!HOT!HOT!</p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 shadow bg-white rounded">
+              <img src="img/KakaoTalk_20200108_174432940.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dog Cafe</h5>
+                <p class="card-text">==I Love Puppy==</p>
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--********************List*********************-->
+    <div class="col-sm-3">
+      <div class="list-group mt-3 shadow bg-white rounded">
+        <a class="list-group-item list-group-item-action bg-info active">
+          About Leo..
+        </a>
+        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          How old is he?
+        </a>
+        <div class="collapse" id="c1">
+          <div class="card card-body text-muted">
+            One and a half years old. <br>His birthday is June 20th.
+          </div>
+        </div>
+        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#c2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          His favorite place?
+        </a>
+        <div class="collapse" id="c2">
+          <div class="card card-body text-muted">
+            Taka Dog's!!!<br>It's a dog cafe.
+          </div>
+        </div>
+        <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#c3" role="button" aria-expanded="false" aria-controls="collapseExample">
+          His favorite food?
+        </a>
+        <div class="collapse" id="c3">
+          <div class="card card-body text-muted">
+            1. Dried duck bone. <br>2. Boiled egg <br>3. Apple and Banana
+          </div>
+        </div>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Bow Wow</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
